@@ -8,7 +8,7 @@ Docker Ethereum Environment with Parity PoA network with 3 authorities and 3 mem
 
 0. Install [docker](https://docs.docker.com/engine/installation/) and [docker-compose](https://docs.docker.com/compose/install/)
 1. Run `git clone git@github.com:MaibornWolff/eden.git && cd eden/parity-poa-docker`
-2. Run `docker-compose up -d`
+2. Run `env PARITY_VERSION=stable NETWORK_NAME=db-ethereum-poa docker-compose up`
 
 ### Access the Parity UI
 Run `docker-compose logs | grep token=` to get an authenticated URL for the Parity UI.
